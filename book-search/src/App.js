@@ -1,8 +1,9 @@
 import React from 'react'
 import './App.css';
-import {Router, Routes, Route} from 'react-router-dom'
+import {Routes, Route} from 'react-router-dom'
 import { BrowserRouter } from 'react-router-dom';
 import Home from './components/Home';
+import BookDetail from './components/BookDetail';
 
 
 
@@ -11,10 +12,10 @@ function App() {
 
   <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} >
-            {/* <Route path="html" element={<Resource category={"html"} title={"HTML"}/>} /> */}
+          <Route path="/" element={<Home />} />
+          <Route path='/detail/:book_id_/:book_id__' element={<BookDetail />}/>
             
-          </Route>
+          
         </Routes>
     </BrowserRouter>
     
