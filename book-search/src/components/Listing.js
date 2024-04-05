@@ -37,8 +37,8 @@ const Listing = ({searchString, setSearchString, defaultString})=>{
                     <p><strong>Author:</strong> {value.author_name?.join(", ")}</p>
                     <p><strong>First Publish Year:</strong> {value.first_publish_year}</p>
                     <p><strong>Ratings Average:</strong> {value.ratings_average}</p>
-                    <button onClick={() => navigate(`/detail${value.key}`)}>&quot;More about the book&quot;</button>
-                    <button onClick={() => window.location.href = `https://www.amazon.com/s?k=${value.isbn[0]}`}>amazon.com</button>
+                    <button className="detail-button" onClick={() => navigate(`/detail${value.key}`)}>Mer om boka</button>
+                    <button className="amazon-button" onClick={() => window.location.href = `https://www.amazon.com/s?k=${value.isbn[0]}`}>Amazon.com-søk</button>
                     </div>
                 ))}
                 </div>}

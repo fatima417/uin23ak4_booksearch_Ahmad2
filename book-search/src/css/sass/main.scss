@@ -70,7 +70,7 @@ h1, h2, h3 {
           }
         }
   
-        button {
+        .amazon-button {
           background-color: #ff9900;
           color: #fff;
           border: none;
@@ -87,6 +87,24 @@ h1, h2, h3 {
             margin-right: 10px;
           }
         }
+
+        .detail-button {
+            background-color: whitesmoke(209, 203, 203);
+            color: black;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+    
+            &:hover {
+              background-color: grey;
+            }
+    
+            &:first-of-type {
+              margin-right: 10px;
+            }
+          }
       }
     }
   }
