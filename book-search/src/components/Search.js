@@ -9,10 +9,10 @@ const Search = ({ searchString, setSearchString, defaultString }) => {
     
 
     return (
-        <div className="search-container"> {/* Apply the class for container styling */}
-            <label className="search-label" htmlFor="searchInput">Search:</label> {/* Apply the class for label styling */}
+        <div className="search-container"> 
+            <label className="search-label" htmlFor="searchInput">Search:</label> 
             <input 
-                className="search-input" // Apply the class for input styling
+                className="search-input" 
                 type="text" 
                 id="searchInput" 
                 value={searchString} 
