@@ -25,22 +25,23 @@ const BookDetail = () => {
     return (
         <div>
             {book && 
-            <div className="book-detail">
-            <h2>{book.title}</h2>
-            <p><strong>Description:</strong> {book.description.value}</p>
-            <p><strong>Subjects:</strong> {book.subjects.join(", ")}</p>
-            <p><strong>Subject Places:</strong> {book.subject_places.join(", ")}</p>
-            <p><strong>Subject People:</strong> {book.subject_people.join(", ")}</p>
-            <p><strong>Subject Times:</strong> {book.subject_times.join(", ")}</p>
-            <p><strong>Author:</strong> {book.authors[0].author.key}</p>
-            <p><strong>Covers:</strong> {book.covers.join(", ")}</p>
-            <p><strong>Latest Revision:</strong> {book.latest_revision}</p>
-            <p><strong>Revision:</strong> {book.revision}</p>
-            <p><strong>Created:</strong> {book.created.value}</p>
-            <p><strong>Last Modified:</strong> {book.last_modified.value}</p>
-            {/* Add other fields as needed */}
-            </div>}
+                <div className="book-detail">
+                <h2 className="book-detail__title">{book?.title}</h2>
+                <p className="book-detail__description"><strong>Description:</strong> {book?.description?.value}</p>
+                <p className="book-detail__subjects"><strong>Subjects:</strong> {book?.subjects?.join(", ")}</p>
+                <p className="book-detail__subject-places"><strong>Subject Places:</strong> {book?.subject_places?.join(", ")}</p>
+                <p className="book-detail__subject-people"><strong>Subject People:</strong> {book?.subject_people?.join(", ")}</p>
+                <p className="book-detail__subject-times"><strong>Subject Times:</strong> {book.subject_times?.join(", ")}</p>
+                <p className="book-detail__author"><strong>Author:</strong> {book?.authors && book?.authors[0]?.author?.key}</p>
+                <p className="book-detail__covers"><strong>Covers:</strong> {book.covers?.join(", ")}</p>
+                <p className="book-detail__latest-revision"><strong>Latest Revision:</strong> {book?.latest_revision}</p>
+                <p className="book-detail__revision"><strong>Revision:</strong> {book?.revision}</p>
+                <p className="book-detail__created"><strong>Created:</strong> {book?.created?.value}</p>
+                <p className="book-detail__last-modified"><strong>Last Modified:</strong> {book.last_modified?.value}</p>
+                </div>
+            }
         </div>
+
     );
 };
 

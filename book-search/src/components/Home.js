@@ -12,7 +12,7 @@ const Home = ()=>{
     return (
         <div>
             {defaultString &&
-            <div>
+            <div className="home-div">
                 
                 <Search defaultString={defaultString} searchString={searchString} setSearchString={setSearchString} />
                 <Listing defaultString={defaultString} searchString={searchString} setSearchString={setSearchString} />

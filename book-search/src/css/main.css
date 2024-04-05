@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+html, body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+.home-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 0;
+  padding: 4rem 0;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+.search-label {
+  margin-right: 10px;
+}
+
+.search-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 200px;
+}
+
+.container .book-listing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.container .book-listing .book-info {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(33.33% - 40px);
+  max-width: 300px;
+  margin-bottom: 2rem;
+}
+.container .book-listing .book-info h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.container .book-listing .book-info p {
+  margin-bottom: 10px;
+}
+.container .book-listing .book-info p strong {
+  font-weight: bold;
+}
+.container .book-listing .book-info button {
+  background-color: #ff9900;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.container .book-listing .book-info button:hover {
+  background-color: #e68a00;
+}
+.container .book-listing .book-info button:first-of-type {
+  margin-right: 10px;
+}
+
+.book-detail {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-detail h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.book-detail p {
+  margin-bottom: 8px;
+}
+
+.book-detail strong {
+  font-weight: bold;
+}
+
+.book-detail__title {
+  margin-top: 0;
+}
+
+.book-detail__description {
+  font-style: italic;
+}
+
+.book-detail__subjects,
+.book-detail__subject-places,
+.book-detail__subject-people,
+.book-detail__subject-times,
+.book-detail__author,
+.book-detail__covers,
+.book-detail__latest-revision,
+.book-detail__revision,
+.book-detail__created,
+.book-detail__last-modified {
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNhc3MvbWFpbi5zY3NzIiwibWFpbi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ1EseUZBQUE7QUFFUjtFQUNJLGtDQUFBO0VBQ0EsZ0JBQUE7QUNESjs7QURJQTtFQUNJLGdCQUFBO0FDREo7O0FER0E7RUFDSSxhQUFBO0VBQ0Esc0JBQUE7QUNBSjs7QURJQTtFQUNJLGFBQUE7RUFDQSxtQkFBQTtFQUNBLHVCQUFBO0VBQ0EsY0FBQTtFQUNBLGVBQUE7RUFDQSxXQUFBO0VBQ0EsNEJBQUE7QUNESjs7QURJRTtFQUNFLGtCQUFBO0FDREo7O0FESUU7RUFDRSxZQUFBO0VBQ0Esc0JBQUE7RUFDQSxrQkFBQTtFQUNBLGVBQUE7RUFDQSxZQUFBO0FDREo7O0FEU0k7RUFDRSxhQUFBO0VBQ0EsZUFBQTtFQUNBLHVCQUFBO0VBQ0EsU0FBQTtBQ05OO0FEUU07RUFDRSx5QkFBQTtFQUNBLGtCQUFBO0VBQ0Esd0NBQUE7RUFDQSxhQUFBO0VBQ0EsMEJBQUE7RUFDQSxnQkFBQTtFQUNBLG1CQUFBO0FDTlI7QURRUTtFQUNFLGVBQUE7RUFDQSxtQkFBQTtBQ05WO0FEU1E7RUFDRSxtQkFBQTtBQ1BWO0FEU1U7RUFDRSxpQkFBQTtBQ1BaO0FEV1E7RUFDRSx5QkFBQTtFQUNBLFdBQUE7RUFDQSxZQUFBO0VBQ0EsaUJBQUE7RUFDQSxrQkFBQTtFQUNBLGVBQUE7RUFDQSxzQ0FBQTtBQ1RWO0FEV1U7RUFDRSx5QkFBQTtBQ1RaO0FEWVU7RUFDRSxrQkFBQTtBQ1ZaOztBRG1CQTtFQUNJLHlCQUFBO0VBQ0EsYUFBQTtFQUNBLGtCQUFBO0VBQ0Esd0NBQUE7QUNoQko7O0FEbUJFO0VBQ0UsV0FBQTtFQUNBLGVBQUE7RUFDQSxtQkFBQTtBQ2hCSjs7QURtQkU7RUFDRSxrQkFBQTtBQ2hCSjs7QURtQkU7RUFDRSxpQkFBQTtBQ2hCSjs7QURtQkU7RUFDRSxhQUFBO0FDaEJKOztBRG1CRTtFQUNFLGtCQUFBO0FDaEJKOztBRG1CRTs7Ozs7Ozs7OztFQVVFLGVBQUE7QUNoQkoiLCJmaWxlIjoibWFpbi5jc3MifQ== */
